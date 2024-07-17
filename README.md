@@ -30,7 +30,7 @@ JavaScript
 <br>
 
 <h2>Installation:</h2>
-<br>
+
 <h4>To run this project locally, follow these steps:</h4>
 <br>
 <h3>1.Clone the repository:</h3>
