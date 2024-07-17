@@ -11,7 +11,9 @@ This project is a Todo application built with React, focusing on fundamental Rea
 <br>
 <b>Update Todo:</b> Enables editing of existing todo items.
 <br>
-<b>Delete Todo:</b> Allows deletion of todo items, marking them as completed or pending.
+<b>Delete Todo:</b> Allows deletion of todo items
+<br>
+<b>Mark as completed:</b>option to mark todo items as completed.
 <br>
 <b>State Management:</b> Utilizes React state and props, leveraging React hooks (useState, useEffect) for managing application state.
 <br>
