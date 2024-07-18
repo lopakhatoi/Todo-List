@@ -1,0 +1,126 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Container to center the app vertically and horizontally */
+.container {
+  background: linear-gradient(to right bottom, #e1b382, #c89666);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper for the app content */
+.app-wrapper {
+  background-color: #0c3138;
+  min-width: 450px;
+  min-height: 650px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px #000;
+  margin-bottom: 10px;
+}
+
+/* Header styles */
+.header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Input field for tasks */
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #ccc;
+  background-color: #000;
+  border: 1px solid #c89666;
+  border-radius: 10px;
+}
+
+/* Button to add tasks */
+.button-add {
+  width: 70px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #f1af71;
+  cursor: pointer;
+}
+
+/* List items for tasks */
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* To space out the content */
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  list-style: none; /* Remove the default bullet points */
+}
+
+/* Task action buttons */
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 50%;
+}
+
+.button-complete {
+  color: #53b32d;
+  margin-right: 10px;
+}
+
+.button-edit {
+  color: #e2d029;
+  margin-right: 10px;
+}
+
+.button-delete {
+  color: rgb(116, 116, 114);
+}
+
+/* Completed task style */
+.complete {
+  text-decoration: line-through solid #d41d1d;
+  opacity: 0.6;
+}
+
+/* List input field */
+.list {
+  width: 220px; /* Adjust to fit the container properly */
+  background-color: #0c3138;
+  border: none;
+  color: #ccc;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+/* Focus styles */
+input:focus,
+button:focus {
+  outline: none;
+}
+
+
