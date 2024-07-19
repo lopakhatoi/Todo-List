@@ -1,43 +1,49 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import TodoLists from "./components/TodoLists";
 import './App.css';
 
-const App=()=> {
+const App = () => {
+  const initialState = JSON.parse(localStorage.getItem("todos")) || [];
+  const [input, setInput] = useState("");
+  const [todos, setTodos] = useState(initialState);
+  const [editTodo, setEditTodo] = useState(null);
+  const [showCompleted, setShowCompleted] = useState(true);
 
-  const initialState=JSON.parse(localStorage.getItem("todos")) || [];
-  const [input, setInput]=useState("");
-  const[todos, setTodos]=useState(initialState);
-  const [editTodo,setEditTodo]=useState(null);
-
-  useEffect(()=>{
-    localStorage.setItem("todos", JSON.stringify(todos))
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
+
+  const toggleShowCompleted = () => {
+    setShowCompleted(prevShowCompleted => !prevShowCompleted);
+  };
+
   return (
     <div className="container">
       <div className="app-wrapper">
-        <div>
-          <Header />
-        </div>
-        <div>
-          <Form 
+        <Header />
+        <Form 
           input={input}
           setInput={setInput}
           todos={todos}
           setTodos={setTodos}
           editTodo={editTodo}
           setEditTodo={setEditTodo}
-          />
-         <div>
-          <TodoLists todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
-         </div>
-        </div>
+        />
+        <button className="toggle-button" onClick={toggleShowCompleted}>
+          {showCompleted ? 'Hide Completed todos' : 'Show all todos'}
+        </button>
+        <TodoLists 
+          todos={todos} 
+          setTodos={setTodos} 
+          setEditTodo={setEditTodo} 
+          showCompleted={showCompleted}
+        />
       </div>
-      
-    
     </div>
   );
 }
 
 export default App;
+

@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const TodoLists = ({ todos, setTodos, setEditTodo }) => {
+const TodoLists = ({ todos, setTodos, setEditTodo, showCompleted }) => {
   const handleComplete = (todo) => {
     setTodos(
       todos.map((item) =>
@@ -20,13 +21,15 @@ const TodoLists = ({ todos, setTodos, setEditTodo }) => {
 
   return (
     <ul style={{ listStyle: 'none', padding: 0 }}>
-      {todos.map((todo) => (
+      {todos
+        .filter(todo => showCompleted || !todo.completed)
+        .map((todo) => (
         <li className='list-item' key={todo.id}>
           <input
             type='text'
             value={todo.title}
             className={`list ${todo.completed ? 'complete' : ''}`}
-            onChange={(event) => event.preventDefault()}
+            readOnly
           />
           <div>
             <button
@@ -52,6 +55,13 @@ const TodoLists = ({ todos, setTodos, setEditTodo }) => {
       ))}
     </ul>
   );
+};
+
+TodoLists.propTypes = {
+  todos: PropTypes.array.isRequired,
+  setTodos: PropTypes.func.isRequired,
+  setEditTodo: PropTypes.func.isRequired,
+  showCompleted: PropTypes.bool.isRequired,
 };
 
 export default TodoLists;
