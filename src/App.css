@@ -24,7 +24,7 @@ html, body {
 
 /* Wrapper for the app content */
 .app-wrapper {
-  background-color: #141c2e;
+  background-color: #1d263a;
   width: 100%;
   max-width: 500px;
   padding: 30px;
@@ -112,7 +112,7 @@ html, body {
 /* List input field */
 .list {
   width: 60%;
-  background-color: #141c2e;
+  background-color: #1d263a;
   border: none;
   color: #ccc;
   font-size: 1rem;
