@@ -30,20 +30,24 @@ This project is a responsive Todo application built with React, focusing on fund
 
 ### To run this project locally, follow these steps:
 
-#### 1. Clone the repository:
-```bash
-git clone https://github.com/lopakhatoi/Todo-List.git
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/lopakhatoi/Todo-List.git
+    ```
 
-#### 2. Navigate to the project directory:
-```bash
-cd todo-app
+2. Navigate to the project directory:
+    ```bash
+    cd todo-app
+    ```
 
-###3. Install dependencies:
-```bash
-npm install
- 
-####4. Usage
-```bash
-npm start
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+4. Usage:
+    ```bash
+    npm start
+    ```
 
 
