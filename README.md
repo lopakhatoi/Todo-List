@@ -33,22 +33,27 @@ JavaScript
 
 <h2>Installation:</h2>
 
-<h4>To run this project locally, follow these steps:</h4>
+<h3>To run this project locally, follow these steps:</h3>
 <br>
-<h3>1.Clone the repository:</h3>
+<h4>1.Clone the repository:</h4>
 <br>
+```bash
 git clone https://github.com/lopakhatoi/Todo-List.git
 <br>
+<h4>2.Naviagte to the project directory:</h4>
+<br>
+```bash
 cd todo-app
 <br>
-<h3>2.Install dependencies:</h3>
+<h4>3.Install dependencies:</h4>
 <br>
+```bash
 npm install
 <br>
-<h3>3. Usage</h3>
+<h4>4. Usage</h4>
 <br>
+```bash
 npm start
-
 <br>
 Once the development server is running, open your browser and navigate to http://localhost:3000. You can add, edit, complete, and delete todos using the interface. Changes to todos are automatically saved to local storage.
 
