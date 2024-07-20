@@ -1,7 +1,7 @@
 <h1>Todo Application using React</h1>
 
 <br>
-This project is a Todo application built with React, focusing on fundamental React concepts, state management, and data integration with local storage.
+This project is a responsive Todo application built with React, focusing on fundamental React concepts, state management, and data integration with local storage.
 
 <h2>Features:</h2>
 <br>
