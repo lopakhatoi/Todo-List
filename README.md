@@ -20,7 +20,8 @@ This project is a responsive Todo application built with React, focusing on fund
 <br>
 <b>Styling:</b> Styled using CSS for a responsive and user-friendly interface.
 <br>
-## Technologies
+<h2>Technologies</h2>
+<br>
 
 - React.js
 - HTML/CSS
