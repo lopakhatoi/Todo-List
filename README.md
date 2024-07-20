@@ -2,24 +2,24 @@
 
 This project is a responsive Todo application built with React, focusing on fundamental React concepts, state management, and data integration with local storage.
 
-## Features
-
-*Add Todo:* Allows users to add new todo items.
-
-*View Todos:* Displays all todo items in a list format.
-
-*Update Todo:* Enables editing of existing todo items.
-
-*Delete Todo:* Allows deletion of todo items.
-
-*Mark as completed:* Option to mark todo items as completed.
-
-*State Management:* Utilizes React state and props, leveraging React hooks (useState, useEffect) for managing application state.
-
-*Data Integration:* Stores todo data locally using the browser's local storage for persistence.
-
-*Styling:* Styled using CSS for a responsive and user-friendly interface.
-
+<h2>Features:</h2>
+<br>
+<b>Add Todo:</b> Allows users to add new todo items.
+<br>
+<b>View Todos:</b> Displays all todo items in a list format.
+<br>
+<b>Update Todo:</b> Enables editing of existing todo items.
+<br>
+<b>Delete Todo:</b> Allows deletion of todo items
+<br>
+<b>Mark as completed:</b>option to mark todo items as completed.
+<br>
+<b>State Management:</b> Utilizes React state and props, leveraging React hooks (useState, useEffect) for managing application state.
+<br>
+<b>Data Integration:</b> Stores todo data locally using browser's local storage for persistence.
+<br>
+<b>Styling:</b> Styled using CSS for a responsive and user-friendly interface.
+<br>
 ## Technologies
 
 - React.js
