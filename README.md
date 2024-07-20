@@ -45,7 +45,7 @@ git clone https://github.com/lopakhatoi/Todo-List.git
 ```bash
 cd todo-app
 <br>
-<h4>3.Install dependencies:</h4>
+3.Install dependencies:
 ```bash
 npm install
 <br>
