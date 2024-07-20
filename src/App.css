@@ -13,7 +13,7 @@ html, body {
 
 /* Container to center the app vertically and horizontally */
 .container {
-  background: linear-gradient(to right bottom, #c465a7, #55a4b3);
+  background: linear-gradient(to right bottom, #d887c0, #68a0aa);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -24,7 +24,7 @@ html, body {
 
 /* Wrapper for the app content */
 .app-wrapper {
-  background-color: #242531;
+  background-color: #201e25;
   width: 100%;
   max-width: 500px;
   padding: 30px;
@@ -49,7 +49,7 @@ html, body {
   font-size: 1rem;
   color: #ccc;
   background-color: #000;
-  border: 1px solid #3d8896;
+  border: 1px solid #5e868d;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -105,14 +105,14 @@ html, body {
 
 /* Completed task style */
 .complete {
-  text-decoration: line-through solid #f30404;
+  text-decoration: line-through solid #d41d1d;
   opacity: 0.6;
 }
 
 /* List input field */
 .list {
   width: 60%;
-  background-color: #242531;
+  background-color: #201e25;
   border: none;
   color: #ccc;
   font-size: 1rem;
